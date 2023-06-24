@@ -1,0 +1,741 @@
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9001
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1000:1000 /home/1 ./1
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9002
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1001:1001 /home/2 ./2
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9005
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1002:1002 /home/32bit_pwn ./32bit_pwn
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9037
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1003:1003 /home/babyheap_0ctf_2017 ./babyheap_0ctf_2017
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9006
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1004:1004 /home/babyrop ./babyrop
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9032
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1005:1005 /home/bjdctf_2020_babyrop ./bjdctf_2020_babyrop
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9033
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1006:1006 /home/bjdctf_2020_babyrop2 ./bjdctf_2020_babyrop2
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9039
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1007:1007 /home/bs ./bs
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9008
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1008:1008 /home/bssbufpoc ./bssbufpoc
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9009
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1009:1009 /home/bssbufpoc2 ./bssbufpoc2
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9022
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1010:1010 /home/canarystack ./canarystack
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9023
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1011:1011 /home/canarystack_plus ./canarystack_plus
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9013
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1012:1012 /home/canarytest ./canarytest
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9038
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1013:1013 /home/ciscn_2019_n_3 ./ciscn_2019_n_3
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9011
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1014:1014 /home/easyrop ./easyrop
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9034
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1015:1015 /home/fm ./fm
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9016
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1016:1016 /home/fmt_0 ./fmt_0
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9017
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1017:1017 /home/fmt_1 ./fmt_1
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9018
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1018:1018 /home/fmt_2 ./fmt_2
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9021
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1019:1019 /home/fmt_arw ./fmt_arw
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9019
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1020:1020 /home/fmt_level100 ./fmt_level100
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9036
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1021:1021 /home/heap ./heap
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9020
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1022:1022 /home/not_stack_fmt ./not_stack_fmt
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9024
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1023:1023 /home/prob1 ./prob1
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9025
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1024:1024 /home/prob2 ./prob2
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9026
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1025:1025 /home/prob3 ./prob3
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9027
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1026:1026 /home/prob4 ./prob4
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9028
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1027:1027 /home/prob5 ./prob5
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9029
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1028:1028 /home/prob6 ./prob6
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9030
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1029:1029 /home/prob7 ./prob7
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9031
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1030:1030 /home/prob8 ./prob8
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9007
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1031:1031 /home/ret2libc ./ret2libc
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9003
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1032:1032 /home/sc_jmprsi ./sc_jmprsi
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9004
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1033:1033 /home/sc_jmprsp ./sc_jmprsp
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9012
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1034:1034 /home/spwn ./spwn
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9014
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1035:1035 /home/stack1 ./stack1
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9015
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1036:1036 /home/stack2 ./stack2
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9035
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1037:1037 /home/wdb_2018_2nd_easyfmt ./wdb_2018_2nd_easyfmt
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+
+service ctf
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    type        = UNLISTED
+    port        = 9010
+    bind        = 0.0.0.0
+    server      = /usr/sbin/chroot   
+    server_args = --userspec=1038:1038 /home/x32test ./x32test
+    # safety options
+    per_source  = 10 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 20 # the maximum number of CPU seconds that the service may use
+    rlimit_as  = 100M # the Address Space resource limit for the service
+    #access_times = 2:00-9:00 12:00-24:00
+}
+

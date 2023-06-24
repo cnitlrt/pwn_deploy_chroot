@@ -1,0 +1,8 @@
+{"flag": "flag{9db885d5-2ae6-4d58-9026-e157f272c2aa}", "port": 9001, "filename": "1"}
+{"flag": "flag{7067d0f2-dd6d-4355-a64e-51d81648569e}", "port": 9002, "filename": "2"}
+{"flag": "flag{b2a491c8-5030-4afa-a706-e866db834f24}", "port": 9005, "filename": "32bit_pwn"}
+{"flag": "flag{b2a481c8-5031-4afb-ad06-e877db86ef23}", "port": 9006, "filename": "babyrop"}
+{"flag": "flag{b22231c8-5340-3a5a-3746-e363d185a426}", "port": 9007, "filename": "ret2libc"}
+{"flag": "flag{31e15ca1-5b57-414b-b3bf-26c2af32a01e}", "port": 9003, "filename": "sc_jmprsi"}
+{"flag": "flag{b2a491c8-5030-4afa-a706-e866db83ef23}", "port": 9004, "filename": "sc_jmprsp"}
+
