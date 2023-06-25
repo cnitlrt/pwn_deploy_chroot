@@ -4,6 +4,7 @@ python initialize.py
 sudo docker-compose up -d
 ```
 # 新增
+需要修改脚本里面的Cookie以及CSRF-Token为抓包得到的值
 自动上题,将题目放入到bin目录，然后执行下面的命令
 ```
 python3 initialize.py
